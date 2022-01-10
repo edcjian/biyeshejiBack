@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.BvMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.Bv">
+    <!--@mbg.generated-->
+    <!--@Table bv-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="play" jdbcType="VARCHAR" property="play" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="time" jdbcType="INTEGER" property="time" />
+    <result column="up_id" jdbcType="VARCHAR" property="upId" />
+    <result column="intro" jdbcType="VARCHAR" property="intro" />
+    <result column="cover" jdbcType="VARCHAR" property="cover" />
+    <result column="recommend" jdbcType="INTEGER" property="recommend" />
+    <result column="collect" jdbcType="INTEGER" property="collect" />
+    <result column="share" jdbcType="INTEGER" property="share" />
+    <result column="tag" jdbcType="VARCHAR" property="tag" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="dynamic" jdbcType="VARCHAR" property="dynamic" />
+    <result column="types" jdbcType="VARCHAR" property="types" />
+    <result column="partition" jdbcType="VARCHAR" property="partition" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, title, play, `comment`, `time`, up_id, intro, cover, recommend, `collect`, `share`, 
+    tag, `location`, `dynamic`, types, `partition`
+  </sql>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.LoadMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.Load">
+    <!--@mbg.generated-->
+    <!--@Table `a`-->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="dlxx_sszd" jdbcType="VARCHAR" property="sszd" />
+    <result column="dlxx_dlsx" jdbcType="VARCHAR" property="dlsx" />
+    <result column="dlxx_level" jdbcType="VARCHAR" property="level" />
+    <result column="dlxx_length" jdbcType="VARCHAR" property="length" />
+    <result column="dlxx_hjmkd" jdbcType="VARCHAR" property="hjmkd" />
+    <result column="dlxx_jmbz" jdbcType="VARCHAR" property="jmbz" />
+    <result column="dlxx_hdmjg" jdbcType="VARCHAR" property="hdmjg" />
+    <result column="dlxx_hdmbz" jdbcType="VARCHAR" property="hdmbz" />
+    <result column="dlxx_edfb" jdbcType="VARCHAR" property="edfb" />
+    <result column="dlxx_cdfbbz" jdbcType="VARCHAR" property="cdfbbz" />
+    <result column="dlxx_sjsd" jdbcType="VARCHAR" property="sjsd" />
+    <result column="dxx_fx" jdbcType="VARCHAR" property="fx" />
+    <result column="dlxx_dlqd" jdbcType="VARCHAR" property="dlqd" />
+    <result column="dlxx_dlzd" jdbcType="VARCHAR" property="dlzd" />
+    <result column="dlxx_xhdsl" jdbcType="VARCHAR" property="xhdsl" />
+    <result column="dlxx_rxhdsl" jdbcType="VARCHAR" property="rxhdsl" />
+    <result column="dlxx_jzwcrksl" jdbcType="VARCHAR" property="jzwcrksl" />
+    <result column="dlxx_bzpsl" jdbcType="VARCHAR" property="bzpsl" />
+    <result column="dlxx_jszsl" jdbcType="VARCHAR" property="jszsl" />
+    <result column="dlxx_tqlbsl" jdbcType="VARCHAR" property="tqlbsl" />
+    <result column="dlxx_bsdsl" jdbcType="VARCHAR" property="bsdsl" />
+    <result column="dlxx_aqzsl" jdbcType="VARCHAR" property="aqzsl" />
+    <result column="dlxx_lsydbzsl" jdbcType="VARCHAR" property="lsydbzsl" />
+    <result column="dlxx_blr" jdbcType="VARCHAR" property="blr" />
+    <result column="dlxx_sjsdbz" jdbcType="VARCHAR" property="sjsdbz" />
+    <result column="dlxx_ccybh" jdbcType="VARCHAR" property="ccybh" />
+    <result column="dlxx_beizhu" jdbcType="VARCHAR" property="beizhu" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, dlxx_sszd, dlxx_dlsx, dlxx_level, dlxx_length, dlxx_hjmkd, dlxx_jmbz, dlxx_hdmjg, 
+    dlxx_hdmbz, dlxx_edfb, dlxx_cdfbbz, dlxx_sjsd, dxx_fx, dlxx_dlqd, dlxx_dlzd, dlxx_xhdsl, 
+    dlxx_rxhdsl, dlxx_jzwcrksl, dlxx_bzpsl, dlxx_jszsl, dlxx_tqlbsl, dlxx_bsdsl, dlxx_aqzsl, 
+    dlxx_lsydbzsl, dlxx_blr, dlxx_sjsdbz, dlxx_ccybh, dlxx_beizhu
+  </sql>
+</mapper>

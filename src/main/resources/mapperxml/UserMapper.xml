@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.User">
+    <!--@mbg.generated-->
+    <!--@Table `user`-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="subtitle" jdbcType="VARCHAR" property="subtitle" />
+    <result column="fans" jdbcType="INTEGER" property="fans" />
+    <result column="focus" jdbcType="INTEGER" property="focus" />
+    <result column="like" jdbcType="INTEGER" property="like" />
+    <result column="video_num" jdbcType="INTEGER" property="videoNum" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, avatar, subtitle, fans, focus, `like`, video_num
+  </sql>
+</mapper>

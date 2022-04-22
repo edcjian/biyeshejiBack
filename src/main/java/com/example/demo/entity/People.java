@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@TableName(value = "b")
+@TableName(value = "people")
 public class People {
     @TableField(value = "rygl_sex")
     private String sex;

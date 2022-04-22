@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.example.demo.entity.*;
 import com.example.demo.service.*;
 import com.example.demo.vo.ResponseVo;
-import org.junit.jupiter.api.Test;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
@@ -54,7 +53,7 @@ public class UserController {
         return "ok";
 
     }
-    @Test
+//    @Test
     public void convertColumnNameToPropertyName() {
         String columnName = "";
         String[] s = columnName.split("_");
@@ -132,7 +131,7 @@ public class UserController {
         return list;
     }
 
-    @PostMapping("/addInfo")
+    @PostMapping("/road/add")
     public void addInfo(@RequestBody Load load) {
         loadService.save(load);
     }
@@ -141,13 +140,20 @@ public class UserController {
     public void del(@RequestParam("id") String id) {
         loadService.removeById(id);
     }
-
-    @GetMapping("/listPeople")
+    @GetMapping("/road/list")
+    public List<Load> listLoad() {
+        List<Load> list = loadService.list();
+        return list;
+    }
+    @GetMapping("/people/list")
     public List<People> listPeople() {
         List<People> list = peopleService.list();
         return list;
     }
-
+    @PostMapping("/people/add")
+    public void addPeople(@RequestBody People people) {
+        peopleService.save(people);
+    }
     @GetMapping("/mapInfo")
     public String mapInfo(@RequestParam("location") String location) {
         RestTemplate res = new RestTemplate();

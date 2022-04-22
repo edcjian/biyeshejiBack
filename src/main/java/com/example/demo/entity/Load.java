@@ -68,8 +68,8 @@ public class Load {
     @TableField(value = "dlxx_bzpsl")
     private String bzpsl;
 
-    @TableField(value = "dlxx_jszsl")
-    private String jszsl;
+/*    @TableField(value = "dlxx_jszsl")
+    private String jszsl;*/
 
     @TableField(value = "dlxx_tqlbsl")
     private String tqlbsl;
